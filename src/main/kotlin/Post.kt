@@ -9,6 +9,6 @@ data class Post(
     val canEdit: Boolean,
     val isPinned: Boolean,
     val comments: Comments?,
-    val attachments: Array<Attachment>,
 ) {
+    private var attachments = emptyArray<Attachment>()
 }

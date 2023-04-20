@@ -20,12 +20,12 @@ class WallServiceTest {
                 canPin = false,
                 isFavorite = false,
                 text = "text",
+                replyPostId = 0,
                 canEdit = false,
+                isPinned = false,
                 comments = Comments(
                     count = 0, canPost = false, groupsCanPost = false
                 ),
-                isPinned = false,
-                replyPostId = 0
             )
         val post = WallService.add(addPost)
         assertNotEquals(0, post.id)
@@ -41,12 +41,12 @@ class WallServiceTest {
                 canPin = false,
                 isFavorite = false,
                 text = "text",
+                replyPostId = 0,
                 canEdit = false,
+                isPinned = false,
                 comments = Comments(
                     count = 0, canPost = false, groupsCanPost = false
                 ),
-                isPinned = false,
-                replyPostId = 0
             )
         val post = WallService.add(addPost)
         val updateResult = WallService.update(post)
@@ -63,12 +63,12 @@ class WallServiceTest {
                 canPin = false,
                 isFavorite = false,
                 text = "text",
+                replyPostId = 0,
                 canEdit = false,
+                isPinned = false,
                 comments = Comments(
                     count = 0, canPost = false, groupsCanPost = false
                 ),
-                isPinned = false,
-                replyPostId = 0
             )
         val post = WallService.add(addPost)
         val updateResult = WallService.update(post.copy(id = 85))
